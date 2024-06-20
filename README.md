@@ -3,7 +3,7 @@
 This is a demo project showcasing a micro frontend architecture using Docker and Docker Compose.
 
 ## Author
-Author: Antony Pleace
+Author: Antony Pleace  
 Email: antony.pleace@symbol8.com
 
 ## Prerequisites
@@ -47,17 +47,18 @@ docker-compose up -d app1
 ```
 
 ## Technologies Used
-Docker (26.1.2)
-Docker Compose (2.20.3)
-React
-Webpack
-node.js (20.14.0)
+
+Docker (26.1.2)  
+Docker Compose (2.20.3)  
+React  
+Webpack  
+node.js (20.14.0)  
 
 
 ## Project Structure
-app1/: Contains the source code for App1.
-app2/: Contains the source code for App2.
-container/: Contains the source code for the container application.
+* **app1/**: Contains the source code for App1.  
+* **app2/**: Contains the source code for App2.  
+* **container**/: Contains the source code for the container application.  
 
 
 ## Contributing
