@@ -3,8 +3,8 @@
 This is a demo project showcasing a micro frontend architecture using Docker and Docker Compose.
 
 ## Author
-Author: Antony Pleace  
-Email: antony.pleace@symbol8.com
+**Author**: Antony Pleace  
+**Email**: antony.pleace@symbol8.com
 
 ## Prerequisites
 
