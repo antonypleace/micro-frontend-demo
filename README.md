@@ -10,6 +10,7 @@ Email: antony.pleace@symbol8.com
 
 - Docker
 - Docker Compose
+- Node.js
 
 ## Getting Started
 
@@ -45,8 +46,22 @@ Refresh a specific app (no complete restart required):
 docker-compose up -d app1
 ```
 
+## Technologies Used
+Docker (26.1.2)
+Docker Compose (2.20.3)
+React
+Webpack
+node.js (20.14.0)
+
+
+## Project Structure
+app1/: Contains the source code for App1.
+app2/: Contains the source code for App2.
+container/: Contains the source code for the container application.
+
+
 ## Contributing
 Contributions are welcome. Please open a pull request with your changes.
 
-License
+## License
 This project is licensed under the MIT License.
