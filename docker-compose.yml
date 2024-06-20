@@ -1,0 +1,14 @@
+version: '3'
+services:
+  container:
+    build: ./container
+    ports:
+      - '8680:8680'
+  app1:
+    build: ./app1
+    ports:
+      - '8681:8681'
+  app2:
+    build: ./app2
+    ports:
+      - '8682:8682'
