@@ -5,7 +5,7 @@ const path = require('path');
 module.exports = {
   mode : 'development',
   devServer : {
-    port : 8680,  // Adjust for each micro frontend
+    port : 80,  // Adjust for each micro frontend
     open : true,
     hot : true,
   },
