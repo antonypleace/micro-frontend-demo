@@ -3,12 +3,28 @@ services:
   container:
     build: ./container
     ports:
-      - '8680:8680'
+      - '3000:3000'
+    environment:
+      - PORT=3000
   app1:
     build: ./app1
     ports:
-      - '8681:8681'
+      - '3001:3001'
+    environment:
+      - PORT=3001
   app2:
     build: ./app2
     ports:
-      - '8682:8682'
+      - '3002:3002'
+    environment:
+      - PORT=3002
+  nginx:
+      image: nginx:latest
+      volumes:
+        - ./nginx.conf:/etc/nginx/nginx.conf
+      ports:
+        - '80:80'
+      depends_on:
+        - container
+        - app1
+        - app2

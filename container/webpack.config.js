@@ -1,11 +1,16 @@
+// Load environment variables from .env file if using dotenv
+require('dotenv').config();
+
+const path = require('path');
+
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const {ModuleFederationPlugin} = require('webpack').container;
-const path = require('path');
+
 
 module.exports = {
   mode : 'development',
   devServer : {
-    port : 80,  // Adjust for each micro frontend
+    port : process.env.PORT || 8680,  // Adjust for each micro frontend
     open : true,
     hot : true,
   },
@@ -30,8 +35,8 @@ module.exports = {
             new ModuleFederationPlugin({
               name : 'container',
               remotes : {
-                app1 : 'app1@http://192.168.1.7:8681/remoteEntry.js',
-                app2 : 'app2@http://192.168.1.7:8682/remoteEntry.js',
+                app1 : 'app1@http://app1.demo.symbol8.com/remoteEntry.js',
+                app2 : 'app2@http://app2.demo.symbol8.com/remoteEntry.js',
               },
               shared : {
                 react : {
