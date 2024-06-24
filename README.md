@@ -18,6 +18,25 @@ To get the project up and running, follow these steps:
 
 1. Clone the repository to your local machine.
 2. Navigate to the project directory.
+3. Update your hosts file with the following entry:
+
+### Windows
+Open the hosts file located at `C:\Windows\System32\drivers\etc\hosts`.
+
+### Linux
+Open the hosts file located at `/etc/hosts`.
+
+### Mac
+Open the hosts file located at `/private/etc/hosts`.
+
+
+### Host File Entry
+Add the following entry to your hosts file:
+```bash
+192.168.1.7 app1.demo.symbol8.com
+192.168.1.7 app2.demo.symbol8.com
+192.168.1.7 container.demo.symbol8.com
+```
 3. Run the following command to build and start the project:
 
 ```bash
