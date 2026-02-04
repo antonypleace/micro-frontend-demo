@@ -35,8 +35,8 @@ module.exports = {
             new ModuleFederationPlugin({
               name : 'container',
               remotes : {
-                app1 : 'app1@http://app1.demo.symbol8.com/remoteEntry.js',
-                app2 : 'app2@http://app2.demo.symbol8.com/remoteEntry.js',
+                app1 : 'app1@http://localhost:3001/remoteEntry.js',
+                app2 : 'app2@http://localhost:3002/remoteEntry.js',
               },
               shared : {
                 react : {
